@@ -1,0 +1,21 @@
+.cards{
+    margin-top: 16.5%;
+    margin-left: 24.3%;
+  
+    width: 390px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+  }
+
+  .MyClassEnterActive {
+    opacity: 0;
+    transition:  opacity 1s linear;
+  }
+  .MyClassEnterDone {
+    opacity: 1;
+
+    transition:  opacity 1s linear;
+  }
+  

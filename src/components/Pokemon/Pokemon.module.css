@@ -1,0 +1,151 @@
+.screen{
+    position:absolute;
+    display: flex;
+    margin-top: 15.5%;
+    margin-left: 23.5%;
+    width: 400px;
+    height: 260px;
+    justify-content: center;
+}
+
+.header{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    height: 20px;
+    justify-content: space-around;
+}
+
+
+.title{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-size: 1.7rem;
+    margin-top: 15px;
+}
+
+.id{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-size: 1.3rem;
+    margin-top: 45px;
+}
+
+.img{
+    height: 150px;
+    margin-top: 25%;
+}
+
+.data{
+    position: absolute;
+
+    margin-left: 54.9%;
+    margin-top: 17%;
+    width:400px;
+    height: 430px;
+}
+
+.stats{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 400px;
+    height: 90px;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-size: 1rem;
+}
+
+.types{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    margin-top: 96%;
+}
+
+.type1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.7rem;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.type2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.7rem;
+    width: 150px;
+    height: 40px;
+    margin-left: 65px;
+}
+
+
+.dpad{
+    position: absolute;
+    margin-top: 34%;
+    margin-left: 24.5%;
+  }
+  
+  .up{
+    height: 40px;
+    width: 45px;
+    opacity: 0;
+    margin-left: 35px;
+    cursor: pointer;
+  }
+  
+  .up:hover{
+    opacity: 0.1;
+  }
+  
+  .left{
+    height: 45px;
+    width: 40px;
+    opacity: 0;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .left:hover{
+    opacity: 0.1;
+  }
+  
+  .right{
+    height: 45px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .right:hover{
+    opacity: 0.1;
+  }
+  
+  .down{
+    height: 40px;
+    width: 45px;
+    opacity: 0;
+    margin-left: 35px;
+    cursor: pointer;
+  }
+  
+  .down:hover{
+    opacity: 0.1;
+  }
+
+  .error{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-size: 1.2rem;
+    margin-top: 17%;
+    margin-left: 28%;
+}

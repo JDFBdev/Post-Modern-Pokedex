@@ -1,0 +1,154 @@
+.pokedex {
+  position: absolute;
+  max-width: 60%;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+.input{
+  position: absolute;
+  margin-top: 14.5%;
+  margin-left: 55.2%;
+  height: 25px;
+  width: 170px;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+}
+
+.btnAbout{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 96%;
+  background-color: rgb(231, 57, 57);
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 60px;
+  box-shadow: 3px 3px  rgba(0, 0, 0, 0.541);
+  transition: transform .5s;
+  cursor: pointer;
+}
+
+.btnAbout:hover{
+  transform: translate(0px, -5px);
+  transition: transform .5s;
+}
+
+.error{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: solid;
+}
+
+.btnSubmit{
+  position: absolute;
+  margin-top: 14.19%;
+  margin-left: 65.5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.info{
+  position: absolute;
+  margin-top: 31.4%;
+  margin-left: 74.3%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.dpad{
+  position: absolute;
+  margin-top: 34%;
+  margin-left: 24.5%;
+}
+
+.up{
+  height: 40px;
+  width: 45px;
+  opacity: 0;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.up:hover{
+  opacity: 0.1;
+}
+
+.left{
+  height: 45px;
+  width: 40px;
+  opacity: 0;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.left:hover{
+  opacity: 0.1;
+}
+
+.right{
+  height: 45px;
+  width: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.right:hover{
+  opacity: 0.1;
+}
+
+.down{
+  height: 40px;
+  width: 45px;
+  opacity: 0;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.down:hover{
+  opacity: 0.1;
+}
+
+.a{
+  position: absolute;
+  margin-top: 34.9%;
+  margin-left: 39.7%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.a:hover{
+  opacity: 0.1;
+}
+
+.b{
+  position: absolute;
+  margin-top: 37.4%;
+  margin-left: 35.8%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.b:hover{
+  opacity: 0.1;
+}

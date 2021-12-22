@@ -1,0 +1,72 @@
+.title{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-size: 1.2rem;
+    margin-top: 17%;
+    margin-left: 25%;
+}
+.text{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-size: 1rem;
+    width: 360px;
+    margin-top: 19%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+
+.linksdiv{
+    position: absolute;
+    display: flex;
+    justify-content:space-around;
+    width: 300px;
+    height: 50px;
+    margin-top: 26.8%;
+    margin-left: center;
+    margin-left: 26%;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    transition: transform .5s;
+}
+
+.icon:hover{
+    cursor: pointer;
+    transform: translate(0px, -5px);
+    transition: transform .2s;
+}
+
+.a{
+    position: absolute;
+    margin-top: 34.9%;
+    margin-left: 39.7%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .a:hover{
+    opacity: 0.1;
+  }
+  
+  .b{
+    position: absolute;
+    margin-top: 37.4%;
+    margin-left: 35.8%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .b:hover{
+    opacity: 0.1;
+  }
