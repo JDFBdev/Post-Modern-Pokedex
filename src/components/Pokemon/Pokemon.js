@@ -55,7 +55,7 @@ export default function Pokemon({pokemon}){
                         <h3  className={s.title}>{capitalizeName(pokemon.forms[0].name)}</h3>
                         <h4 className={s.id}>Nº {pokemon.id}</h4>
                     </div>
-                    <img className={s.img} src={`https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/${pokemon.forms[0].name}.gif`}/>
+                    <img className={s.img} src={`https://projectpokemon.org/images/normal-sprite/${pokemon.forms[0].name}.gif`}/>
                 </div>
                 <div className={s.data}>
                     <div className={s.stats}>
