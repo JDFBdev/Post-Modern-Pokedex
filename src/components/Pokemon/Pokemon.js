@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { getPokemonDetail }  from '../../actions/index.js';
 import s from './Pokemon.module.css';
 import { useDispatch } from 'react-redux';
-import { useHistory } from "react-router-dom";
 
 export default function Pokemon({pokemon}){
     const dispatch = useDispatch();
@@ -55,7 +54,7 @@ export default function Pokemon({pokemon}){
                         <h3  className={s.title}>{capitalizeName(pokemon.forms[0].name)}</h3>
                         <h4 className={s.id}>Nº {pokemon.id}</h4>
                     </div>
-                    <img className={s.img} src={`https://projectpokemon.org/images/normal-sprite/${pokemon.forms[0].name}.gif`}/>
+                    <img alt='gif' className={s.img} src={`https://projectpokemon.org/images/normal-sprite/${pokemon.forms[0].name}.gif`}/>
                 </div>
                 <div className={s.data}>
                     <div className={s.stats}>

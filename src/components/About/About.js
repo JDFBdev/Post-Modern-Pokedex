@@ -11,7 +11,7 @@ export default function About({name, id, selected}) {
     const handleB = function(e){
         history.push(`/`);
       }
-      
+    
   return (
       <div>
         <div>
@@ -23,9 +23,9 @@ export default function About({name, id, selected}) {
                 - Juan Diego Fernández Bottarini</p>
         </div>
         <div className={s.linksdiv} >
-            <img src={linkedin} className={s.icon} onClick={() => { window.open('https://www.linkedin.com/in/jdfbdev/','_blank')}} />
-            <img src={gmail} className={s.icon} onClick={() => { window.open('mailto:JDFBdeveloper@gmail.com?','_blank')}} />
-            <img src={git} className={s.icon} onClick={() => { window.open('https://github.com/JDFBdev','_blank')}} />
+            <img alt='linkedin Icon' src={linkedin} className={s.icon} onClick={() => { window.open('https://www.linkedin.com/in/jdfbdev/','_blank')}} />
+            <img alt='Gmail Icon' src={gmail} className={s.icon} onClick={() => { window.open('mailto:JDFBdeveloper@gmail.com?','_blank')}} />
+            <img alt='Git Icon' src={git} className={s.icon} onClick={() => { window.open('https://github.com/JDFBdev','_blank')}} />
         </div>
         <button className={s.a}></button>
         <button onClick={handleB} className={s.b}></button>

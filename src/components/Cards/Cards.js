@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Cards.module.css';
 import Card from '../Card/Card';
-import ReactTooltip from 'react-tooltip';
 
 export default function Cards({selected, render}) {
 

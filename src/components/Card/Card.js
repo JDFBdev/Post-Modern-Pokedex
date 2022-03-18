@@ -1,9 +1,6 @@
 import React from 'react';
 import s from './Card.module.css';
 
-
-
-
 export default function Card({name, id, selected}) {
 
   const capitalizeName = function(name){
@@ -23,11 +20,11 @@ export default function Card({name, id, selected}) {
           <p className={s.name} >{capitalizeName(name)}</p>
           {(name === 'about') ? (<div>
             <p className={s.id}>&nbsp;</p>
-            <img className={s.img} src={`https://64.media.tumblr.com/c130a540ef4b75da584123f3f7f24721/tumblr_ohb5qyLzZX1rpn9eno1_540.gif`}></img>
+            <img alt='about gif' className={s.img} src={`https://64.media.tumblr.com/c130a540ef4b75da584123f3f7f24721/tumblr_ohb5qyLzZX1rpn9eno1_540.gif`}></img>
           </div>) : (
             <div>
               <p className={s.id}>Nº {id}</p>
-              <img className={s.img} src={`https://img.pokemondb.net/sprites/x-y/normal/${name}.png`}></img>
+              <img alt='pokemon' className={s.img} src={`https://img.pokemondb.net/sprites/x-y/normal/${name}.png`}></img>
             </div>
             )
           }

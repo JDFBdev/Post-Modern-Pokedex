@@ -8,7 +8,7 @@ const initialState = {
     if (action.type === "GET_ALL_POKEMON") {
         let result = action.payload.results;
         result.push({name: 'about'})
-        result.map((p,index)=>{p.id = index+1; });
+        result.map((p,index)=>{return p.id = index+1; });
         return {
           ...state,
           pokemonLoaded: result        // results es una propiedad que me devolvio la API en payload

@@ -139,7 +139,7 @@ export default function Buscador({allPokemon}){
   return (
     <div style={{position: 'relative'}}>
       <div style={{position: 'absolute', backgroundImage: `url(${background})`, backgroundPosition: 'center' , backgroundSize: 'cover',  width: '100vw', height: '100vh'}}/>
-      <img className={s.pokedex} src={pokedex}/>
+      <img alt="pokedex" className={s.pokedex} src={pokedex}/>
 
       <input className={s.input} onChange={handleInput} name='title' value={state.title} placeholder="Search by name or ID..." ></input>
       <button className={s.btnSubmit} onClick={handleSubmit} ></button>
