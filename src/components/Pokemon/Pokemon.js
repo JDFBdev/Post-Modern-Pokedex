@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux';
 export default function Pokemon({pokemon}){
     const dispatch = useDispatch();
 
-    
     const capitalizeName = function(name){
         let ans = name.charAt(0).toUpperCase() + name.slice(1);
         if (ans === 'Mr-mime'){
@@ -21,10 +20,10 @@ export default function Pokemon({pokemon}){
     }
     
     const handleRight = function(){
-        dispatch(getPokemonDetail(pokemon.id+1));
-
+        if (pokemon.id < 151){
+            dispatch(getPokemonDetail(pokemon.id+1));
+        }
     }
-    
 
     const typeColor = function(type){
         if(type==='grass'){return 'rgb(93, 224, 69)'}
@@ -44,7 +43,6 @@ export default function Pokemon({pokemon}){
         if(type==='ice'){return 'rgb(127, 228, 253)'}
         if(type==='dragon'){return '#7C6BC7'}
     } 
-
 
     return (
         <div> {(pokemon.forms || pokemon.id>151) ? 
