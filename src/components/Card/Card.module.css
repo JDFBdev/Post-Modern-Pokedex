@@ -9,33 +9,35 @@
 
 .selectedContainer{
     background-color: #b5e9ff;
-    width: 88%;
-    height: 98%;
+    max-width: 88%;
+    max-height: 98%;
     border-radius: .5rem;
     text-align: center;
     transform: translate(0px, -.3rem);
     box-shadow: .2rem .2rem  rgba(0, 0, 0, 0.253);
     transition: transform .5s, box-shadow .5s;
+
 }
 
 .name{
     font-family: 'Courier New', Courier, monospace;
     font-weight:lighter;
-    font-size: 1.3vmin;
+    font-size: clamp(10px, 1vw, .8rem);
     margin-top: 0;
-    margin-bottom: -.8rem;
+    margin-bottom: 0;
 }
 
 .id{
     font-family: 'Courier New', Courier, monospace;
     font-weight:lighter;
-    font-size: 1.5vmin;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: clamp(10px, 1vw, .8rem);
+    margin-top: -15%;
+    
 }
 
 .img{
     max-width: 71%;
+    margin-top: -15%;
     object-fit: cover;
 }
 

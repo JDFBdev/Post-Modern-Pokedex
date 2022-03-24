@@ -1,10 +1,18 @@
 import React from "react";
-import { getPokemonDetail }  from '../../actions/index.js';
+import { clearDetail, getPokemonDetail }  from '../../actions/index.js';
 import s from './Pokemon.module.css';
 import { useDispatch } from 'react-redux';
+import {isMobile} from 'react-device-detect';
+import { useHistory } from "react-router-dom";
 
 export default function Pokemon({pokemon}){
     const dispatch = useDispatch();
+    let history = useHistory();
+
+    const handleB = function(e){
+        dispatch(clearDetail());
+        history.push(`/`);
+      }
 
     const capitalizeName = function(name){
         let ans = name.charAt(0).toUpperCase() + name.slice(1);
@@ -71,6 +79,7 @@ export default function Pokemon({pokemon}){
             </div>
             ) : ((pokemon.id>151) ? (<h1 className={s.error} >No matching Results</h1>) : null)
             }
+            {isMobile && 
             <div className={s.dpad}>
                 <div>
                     <button  className={s.up} ></button>
@@ -80,9 +89,12 @@ export default function Pokemon({pokemon}){
                     <button onClick={handleRight} className={s.right}></button>
                 </div>
                 <div>
-                <button className={s.down}></button>
+                    <button className={s.down}></button>
                 </div>
             </div>
+            }
+            <button className={s.a}/>
+            <button onClick={handleB} className={s.b}/>
         </div>
     );
 }
