@@ -10,6 +10,7 @@ import { clearDetail, getPokemonDetail }  from '../../actions/index.js';
 import { useSelector, useDispatch } from 'react-redux';
 import ReactTooltip from 'react-tooltip';
 import {isMobile} from 'react-device-detect';
+import About from '../About/About';
 
 export default function Buscador({allPokemon}){
   const [selected, setSelected] = useState({id:1, key:null, origin: null});
@@ -46,7 +47,7 @@ export default function Buscador({allPokemon}){
   const handleSubmit = function(e) {
     e.preventDefault();
     if(Number((state.title)<=151 && Number(state.title)>=1) || isNaN(Number(state.title))){
-      dispatch(getPokemonDetail(state.title));
+      dispatch(getPokemonDetail(state.title.toLocaleLowerCase()));
       history.push(`/pokemon`);
     }else{
       alert('Number must be between 1 and 151!')
@@ -173,14 +174,17 @@ export default function Buscador({allPokemon}){
           }
          <button onClick={handleA} className={s.a}/>
          <button className={s.b}/>
-         {
+        </Route>
+        <Route path='/pokemon' >
+          <Pokemon pokemon={pokemon} />
+        </Route>
+        <Route path='/about' >
+          <About />
+        </Route>
+        {
            isMobile &&
             <p className={s.swipe}>{`Swipe =>`}</p>   
-         }
-       </Route>
-       <Route path='/pokemon' >
-         <Pokemon pokemon={pokemon} />
-       </Route>
+        }
       </div>
     </div>
   )
